@@ -1,0 +1,101 @@
+.profile-page {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    // --- User Info Section ---
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      border: 1px solid #e4e4e4;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      background-color: #fff;
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #f0f0f0;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #777;
+        margin-bottom: 20px;
+        max-width: 600px;
+      }
+
+      .rating {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        color: #555;
+
+        .stars {
+          color: #ffc107;
+          font-size: 1.4rem;
+        }
+      }
+
+      .contact-button {
+        padding: 12px 24px;
+        border: none;
+        background-color: #1dbf73;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #179d5f;
+        }
+      }
+    }
+
+    // --- User Gigs Section ---
+    .user-gigs {
+      h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .gig-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 30px;
+        justify-content: center;
+      }
+
+      p {
+        text-align: center;
+        color: #888;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

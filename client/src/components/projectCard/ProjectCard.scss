@@ -1,0 +1,79 @@
+.projectCard {
+  width: 300px;
+  height: 350px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative; // Needed for positioning the text
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .gigCover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white; // Text color to stand out on the image
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); // Gradient overlay
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+
+    .userProfilePic {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      width: 14px;
+      height: 14px;
+      filter: invert(1); // Makes the star white
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+
+// Remove this section as it's not needed for the new style
+// .price-and-star, .detail, .projectCardLink {
+//  display: none;
+// }

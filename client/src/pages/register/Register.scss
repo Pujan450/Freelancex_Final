@@ -1,0 +1,172 @@
+/* Register.scss */
+
+.register-page {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+}
+
+.register-left-panel {
+  flex: 1;
+  background-image: url('https://placehold.co/1000x1200/5C6BC0/FFFFFF?text=Design+System'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  border-radius: 0 50px 50px 0;
+}
+
+.quote-box {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  font-size: 1rem;
+  .author-name {
+    font-weight: bold;
+    display: block;
+  }
+  .author-role {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+}
+
+.register-right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.header-text {
+  text-align: left;
+  margin-bottom: 40px;
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+  }
+
+  input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    
+    &:focus {
+      outline: none;
+      border-color: #7b43ff;
+      box-shadow: 0 0 0 3px rgba(123, 67, 255, 0.2);
+    }
+  }
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #7b43ff;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  &:hover {
+    background-color: darken(#7b43ff, 10%);
+  }
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #999;
+  position: relative;
+  
+  span {
+    background: #f7f9fc;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #ddd;
+    transform: translateY(-50%);
+  }
+}
+
+.google-section {
+  .GoogleLogin {
+    width: 100%;
+    .nsm7Bb-HzV7m-Lgbsl-qMrzs {
+      width: 100% !important;
+    }
+  }
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 20px;
+  
+  a {
+    color: #7b43ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 900px) {
+  .register-left-panel {
+    display: none;
+  }
+}
