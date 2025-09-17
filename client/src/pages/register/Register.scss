@@ -9,15 +9,16 @@
 }
 
 .register-left-panel {
-  flex: 1;
-  background-image: url('https://placehold.co/1000x1200/5C6BC0/FFFFFF?text=Design+System'); /* Replace with your image URL */
-  background-size: cover;
+   flex: 1;
+  background-image: url('../../../public/img/register2.png');
+  background-size: 70%;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   align-items: flex-end;
   padding: 40px;
-  border-radius: 0 50px 50px 0;
+  border-radius:10px;
 }
 
 .quote-box {
